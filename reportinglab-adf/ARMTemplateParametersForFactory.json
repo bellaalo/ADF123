@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "reportinglab-adf"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"Snowflake1_connectionString": {
+			"value": ""
+		},
+		"ls_abDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"ls_ablobStorage1_connectionString": {
+			"value": ""
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://dummy.restapiexample.com/api/v1/employees"
+		},
+		"ls_abDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://projectdeltadl.dfs.core.windows.net/"
+		}
+	}
+}
