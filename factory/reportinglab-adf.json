@@ -1,0 +1,9 @@
+{
+	"name": "reportinglab-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "406f5bca-ac1b-4eea-b29f-b204de8859b2",
+		"tenantId": "e4a34944-90ff-45da-ad43-b0bbe3be0543"
+	}
+}

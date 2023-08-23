@@ -1,0 +1,26 @@
+{
+	"name": "ds_sa_raw_gz",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ablobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "sa-data.tsv.gz",
+				"container": "population"
+			},
+			"columnDelimiter": "\t",
+			"compressionCodec": "gzip",
+			"compressionLevel": "Optimal",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

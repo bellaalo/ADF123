@@ -1,0 +1,25 @@
+{
+	"name": "ds_dlraw_tsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_abDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dl_data.tsv",
+				"folderPath": "destination_data",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

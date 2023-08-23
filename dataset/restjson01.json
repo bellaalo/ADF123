@@ -1,0 +1,29 @@
+{
+	"name": "restjson01",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ablobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"filesname": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().filesname",
+					"type": "Expression"
+				},
+				"folderPath": "source",
+				"container": "population"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
