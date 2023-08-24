@@ -7,7 +7,32 @@
 		},
 		"annotations": [],
 		"type": "SnowflakeTable",
-		"schema": [],
+		"schema": [
+			{
+				"name": "ID",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "EMPLOYEE_NAME",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "EMPLOYEE_SALARY",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "EMPLOYEE_AGE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			}
+		],
 		"typeProperties": {
 			"schema": "DBTDEV",
 			"table": "PRODUCTS"

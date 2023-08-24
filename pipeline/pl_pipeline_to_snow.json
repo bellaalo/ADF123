@@ -113,6 +113,10 @@
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
 						"recursive": true,
+						"modifiedDatetimeStart": {
+							"value": "@addhours(utcnow(),-24)",
+							"type": "Expression"
+						},
 						"enablePartitionDiscovery": false
 					}
 				}
