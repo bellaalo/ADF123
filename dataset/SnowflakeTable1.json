@@ -1,0 +1,41 @@
+{
+	"name": "SnowflakeTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "EMPLOYEE_NAME",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "EMPLOYEE_SALARY",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "EMPLOYEE_AGE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "DBTDEV",
+			"table": "PRODUCTS"
+		}
+	}
+}
