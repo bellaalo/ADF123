@@ -9,6 +9,12 @@
 					"referenceName": "pl_pipeline_api01",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "pl_pipeline_to_snow",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
